@@ -1,14 +1,20 @@
 {
-  "name": "ErrorsSpy",
-  "description": "Track console & network issues and download their report files.",
-  "version": "0.3",
-  "permissions": ["debugger"],
+  "name": "Confluent ErrorSpy",
+  "description": "Captures and downloads console logs, network trace and tab recording.",
+  "version": "0.1",
+  "permissions": [
+    "debugger",
+    "tabs",
+    "tabCapture"
+  ],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [
+      "background.js"
+    ]
   },
   "browser_action": {
     "default_icon": "icon.green.png",
-    "default_title": "ErrorsSpy"
+    "default_title": "Confluent ErrorSpy"
   },
   "manifest_version": 2
 }
